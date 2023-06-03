@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/.{test}.original', function () {
-    return view('welcome');
+//Route::get('/', function () {
+//    $contents = file_get_contents('../public/data.js');
+//    $response = Response::make($contents, "200");
+//    $response->header('Content-Type', 'application/javascript');
+//    return $response;
+////    return "asuau";
+//});
+
+Route::get('/', function () {
+    abort(404);
 });
